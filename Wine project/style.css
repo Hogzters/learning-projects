@@ -72,4 +72,7 @@ body {
   .left {
     width: 150px;
   }
-  
+  nav h3 {
+    text-align: center;
+    word-spacing: 5%;
+   }
