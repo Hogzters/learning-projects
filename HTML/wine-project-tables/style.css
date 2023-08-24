@@ -72,9 +72,15 @@ body {
   .left {
     width: 150px;
   }
-  nav h3 {
-    text-align: left;
-    word-spacing: 5%;
+  nav li {
+    display:block;
+    text-align:left;
+    margin:0;
+    padding:0;
+
+   }
+   nav li:hover{
+    background-color: black;
    }
    
    
