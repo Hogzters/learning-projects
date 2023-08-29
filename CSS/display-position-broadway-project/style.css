@@ -66,12 +66,13 @@ html, body {
     padding: 0 10px;
     text-align: center;
   }
-  .container.col{
-    margin: 20px 0px;
+
+    .col{
+    margin: 50px 0px;
   }
   
   .jumbotron {
-    height: 800px;
+    height: 500px;
     background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
