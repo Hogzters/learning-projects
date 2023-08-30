@@ -173,6 +173,7 @@ body{
     border-radius: 25px;
     margin: 0 auto 4.44rem auto;
     background-color: #8f7e74;
+    height: auto;
   }
 
   .history h2{
