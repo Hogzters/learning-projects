@@ -6,45 +6,79 @@
 body, html{
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: #EBEFE3;
 }
-
-h2{
-    border-bottom: 1px solid black;
-    font-size: 30px;
-    letter-spacing: 2px;
-    padding-bottom: 1rem;
-}
-
+@media only screen and (max-width: 1000px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 680px) {
+    html {
+      font-size: 14px;
+    }
+  }
 #main-color{
     background-color: brown;
 }
 
+
+/* Header */
+
+.header{
+    display:block;
+    text-align: justify;
+    text-align: center;
+    background-color: #B2BDA0;
+    margin: 5rem 38rem 0rem 38rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    border: 1px solid black;
+}
+
+.header h1{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 3rem;
+}
+
+.header h2{
+    font-family: 'Bitter', serif;
+    font-size: 1.5rem;
+}
+@media only screen and (max-width: 550px) {
+    .header{
+      flex-direction: column;
+      margin: 20rem 0 0 0;
+      padding: 0;
+      
+    }
+  
+  }
 /* Navigation */
 
 .nav ul{
-    margin: 0;
+    margin: 0 6.8rem 0 0;
 }
 
 .nav {
-    display: block;
     border-bottom: 1px solid black;
-    margin-bottom: 20px;
-    padding-bottom: 3rem;
-    width: clamp(50%, 100%, 100%);
-    height: 2.5rem;
+    width: 100%;
+    height: 2.8rem;
     top: 0px;
-    background-color: aquamarine;
+    background-color: #8D9E6F;
     text-align: center;
     position: fixed;
     box-shadow: 0 2px;
-    font-size: 25px;
+    font-size: 20px;
 
     
 }
 
 .nav li{
     display: inline;
+    
 }
 
 .nav a{
@@ -53,10 +87,12 @@ h2{
     padding: 10px 10px;
     color: black;
     border-right: 2px solid black;
+    font-family: 'Signika', sans-serif;
+    font-weight: 300;
     
 }
 
-.nav #edu{
+.nav #contact{
 border-right: none;
 }
 
@@ -65,18 +101,43 @@ border-right: none;
     
 }
 
-/* Main */
+#home{
+    float: left;
+    border-right: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .nav a {
+      float: left;
+      width: 100%;
+      
+    }
+
+    .nav{
+        position: absolute;
+    }
+  }
+
+/* About Me */
 
 .about-me {
     display: block;
     text-align: justify;
     border-radius: 10px;
-    margin:4rem 38rem 2rem 38rem;
+    margin:2rem 38rem 2rem 38rem;   
     padding: 3rem;
-    background-color: aquamarine;
+    border: 1px solid black;
+    background-color: #8D9E6F;
     box-shadow: 5px 5px;
-    font-size: 20px;
+    font-size: 1.1rem;
+    font-family: 'Bitter', serif;
 }
+.about-me p, strong, em{
+    font-family: 'Bitter', serif;
+}
+
 
 
 .about-me img{
@@ -87,20 +148,15 @@ border-right: none;
     
     
 }
-
-/* Working */
-
-.working-experience{
-    display: block; 
-    text-align: center;
-    margin: 2rem 38rem;
-    padding: 1rem;
-    border-radius: 10px;
-    border-bottom: 1px thin black;
-    background-color: aqua;
-    box-shadow: 5px 5px;
-    
+@media only screen and (max-width: 550px) {
+    .about-me{
+      flex-direction: column;
+      margin: 2rem 0 0 0;
+      padding: 0;
+      
+    }
 }
+/* Working */
 
 .date{
     font-style: italic;
@@ -110,43 +166,63 @@ border-right: none;
     font-weight: bold;
 }
 
-.location{
+/* Container */
+
+.container{
     border-bottom: 1px dotted black;
     margin-bottom: 1rem;
     word-spacing: 1px;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: 18px;
+    
+    
 }
 
-.location:last-child{
+.container-main{
+    display:block;
+    text-align: center;
+    background-color: #B2BDA0;
+    margin: 2rem 38rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    border: 1px solid black;
+    
+}
+
+.container-main h2{
+    border-bottom: 1px solid black;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    padding: 0.5rem 0 2rem 0;
+    font-family: 'Bitter', serif;
+}
+
+.container-main .date, .calification, p{
+    font-family: 'Bitter', serif;
+    font-size: 1.2rem;
+}
+
+.container:last-child{
     border-bottom: none;
 }
 
+@media only screen and (max-width: 750px) {
+    .container-main{
+      height: 35rem;
+      margin: 4rem 0 0 0;
+      padding: 0rem;
+    }
+}
+
+
+
 /* Education */
 
-.education{
-    display:block;
-    text-align: center;
-    background-color: rgb(124, 189, 247);
-    margin: 2rem 38rem;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px;
-    
-}
 
+    
 /* Courses */
 
-.courses-main{
-    display:block;
-    text-align: center;
-    background-color: rgb(80, 185, 132);
-    margin: 2rem 38rem;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px;
-    
-}
 
 .courses p{
     font-weight: bold;
@@ -159,39 +235,80 @@ border-right: none;
 
 /* Digital skills*/
 
-.digital-skills{
-    display:inline-block;
+/*.digital-skills{
+    display: block;
     text-align: center;
-    background-color: rgb(95, 78, 245);
-    margin: 2rem 38rem;
+    background-color: #B2BDA0;
+    margin: 0rem 38rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 5px 5px;
-    font-size: 20px;
-    
+    font-size: 18px;
+    border: 1px solid black;
+    word-spacing: 1px;
+    letter-spacing: 1px;
 }
+*/
+    
+
 
 /* Languages */
 
-.languages{
-    display:block;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    background-color: aliceblue;
-    margin: 2rem 38rem;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 5px 5px;
-    
-}
-
-.table{
-    margin: 2rem auto 0 auto;
+.table th, .table td{
+    margin: 2rem auto 1rem auto;
     font-size: 20px;
-
+    padding: .5rem;
+    
 }
 
 table, th, td{
     border: 1px solid black;
 }
+
+
+
+/* Footer */
+
+.footer{
+    display: block;
+    background-color: #8D9E6F;
+    height: 4.2rem;
+    border-top: 1px solid black;
+    width: 100%;
+    box-shadow: 2px 0px;
+    font-size: 20px;
+   
+}
+
+.images-container {
+        float: right;
+ }
+
+.footer img{
+    margin-top: 0.8rem;
+    margin-right: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+.footer .contact-me{
+    margin-right: 2rem;
+    float:right;
+}
+
+
+.footer .by{
+    
+    font-style: italic;
+    
+}
+
+@media screen and (max-width: 300px) {
+    .footer {
+      
+      width: 100%;
+      
+    }
+
+  }
+

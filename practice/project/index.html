@@ -3,16 +3,26 @@
     <head>
         <title>My Portofolio | Project</title>
         <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter&family=IBM+Plex+Serif:wght@500&family=Signika:wght@300;400&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <div class="header" id="header">
+            <h1>Curriculum Vitae</h1>
+            <h2>Struna Florin-Constantin</h2>
+            
+        </div>
         <div class="nav">
             <nav>
                 <ul>
-                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#header"  id="home"><strong>Home</strong></a></li>
                     <li><a href="#working-experience">Working experience</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#courses">Courses</a></li>
-                    <li><a href="#education" id="edu">Education</a></li>
+                    <li><a href="#digital-skills">Digital/Language Skills</a></li>
+                    <li><a href="#footer" id="contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -21,17 +31,17 @@
             <div class="about-me" id="about-me">
                 <img src="images/me.jpg" alt="not supported" width="120px" height="150px">
                 <p>
-                    Graduated from the University Alexandru Ioan Cuza Iași, specialized in the field of <strong>marketing</strong> and a
+                    Graduated from the University Alexandru Ioan Cuza Iași, specialized in the field of <strong>marketing</strong> and and by doing courses i have a
                     beginners knowledge of <strong>programming</strong> <em>(Javascript, C++/C, HTML, CSS, GIT)</em>. I am a hard working person who
-                    comes with ideas and solutions and with experience in corporations.<br>
-
+                    comes with ideas and solutions and with experience in corporations.
+                    <br>
                     Continuoustly learning programming as the market and technology is continuously advancing. 
                 </p>
             </div>
 
-            <div class="working-experience" id="working-experience">
+            <div class="container-main" id="working-experience">
                 <h2>Working experience</h2>
-                <div class="location">
+                <div class="container">
                     <span class="date">07/2018 – 07/2020</span><br>
                     <span class="calification"> Bartender</span>
                     <p>
@@ -39,7 +49,7 @@
                     </p>
                 </div> 
 
-                <div class="location">
+                <div class="container">
                     <span class="date">07/2020 – 11/2021</span><br>
                     <span class="calification"> Delivery driver</span><br>
                     <p>
@@ -47,7 +57,7 @@
                     </p>
                 </div>
                 
-                <div class="location">
+                <div class="container">
                     <span class="date">11/2021 – Present</span><br>
                     <span class="calification"> Senior Analyst</span><br>
                     <p>
@@ -56,9 +66,9 @@
                 </div>  
             </div>
 
-            <div class="education" id="education">
+            <div class="container-main" id="education">
                 <h2>Education</h2>
-                <div class="location">
+                <div class="container">
                 <span class="date">09/2013 – 06/2017</span><br>
                 <span class="calification">Computer mathematics profile</span>
                 <p>
@@ -66,19 +76,19 @@
                 </p>
                 </div>
 
-                <div class="location">
+                <div class="container">
                 <span class="date">09/2017 – 07/2021</span><br>
-                <span class="calification">Faculty of Economics and Bussiness Administration - Margketing Specialization</span>
+                <span class="calification">Faculty of Economics and Bussiness Administration - Marketing Specialization</span>
                 <p>
                     Institution: "Alexandru Ioan Cuza" University
                 </p>
                 </div>
             </div>
 
-            <div class="courses-main" id="courses">
+            <div class="container-main" id="courses">
                 <h2>Courses</h2>
 
-                <div class="location courses">    
+                <div class="container courses">    
                     <span class="date">08/2023</span><br>
                     <span class="course-title">Introduction to Front-End Development </span>
                     <p>
@@ -87,7 +97,7 @@
                     <em>HTML, CSS, JS video learning.</em>
                 </div>
                  
-                <div class="location courses">
+                <div class="container courses">
                 <span class="date">08/2023</span><br>
                 <span class="course-title">Learn HTML Course</span>
                 <p>
@@ -96,7 +106,7 @@
                 <em>HTML projects based learning.</em>
                 </div>
 
-                <div class="location courses">
+                <div class="container courses">
                 <span class="date">08/2023</span><br>
                 <span class="course-title">Learn CSS Course</span>
                 <p>
@@ -105,7 +115,7 @@
                 <em>CSS projects based learning.</em>
                 </div>
 
-                <div class="location courses">
+                <div class="container courses">
                 <span class="date">12/2021</span><br>
                 <span class="course-title">Introduction to HTML5</span>
                 <p>
@@ -114,7 +124,7 @@
                 <em>HTML video course.</em>
                 </div>
                 
-                <div class="location courses">
+                <div class="container courses">
                 <span class="date">12/2021 </span><br>
                 <span class="course-title">Introduction to Cybersecurity for Business</span>
                 <p>
@@ -124,12 +134,14 @@
                 </div>
             </div>
 
-            <div class="digital-skills">
+            <div class="container-main" id="digital-skills">
                 <h2>Digital skills</h2>
-                <span class="skills">HTML, CSS, Javascript, GIT, GitHub, Photoshop, Microsoft Word, Microsoft Excel, Microsoft PowerPoint</span>
+                <div div="container">
+                    <p>HTML, CSS, Javascript, GIT, GitHub, Photoshop, Microsoft Word, Microsoft Excel, Microsoft PowerPoint</p>
+                </div>
             </div>
 
-            <div class="languages">
+            <div class="container-main" id="language-skills">
                 <h2>Language Skills</h2>
                 <table class="table">
                     <thead>
@@ -174,7 +186,14 @@
         </div>
     </body>
 
-    <footer>
-
+    <footer class="footer" id="footer">
+        <div class="images-container">
+            <a href="https://www.facebook.com/strunaflo/" target="_blank"><img src="images/fb.png" alt="not supported"></a>
+            <a href="https://github.com/Hogzters" target="_blank"><img src="images/git.png" alt="not supported"></a>
+            <a href="https://linkedin.com/in/struna-florin" target="_blank"><img src="images/linkedin.png" alt="not supported"></a>
+            <a href=mailto: "struna_florin@yahoo.com" target="_blank"><img src="images/yahoo.png" alt="not supported"></a>
+        </div>
+        <p class="contact-me">Contact me:</p>
+        <p class="by">@created by Struna Florin</p>
     </footer>
 </html>
