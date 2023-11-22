@@ -1,0 +1,61 @@
+/* -webkit- for Chrome, Safari, newer versions of Opera, and almost all iOS browsers, including Firefox for iOS
+-moz- for Firefox
+-ms- for Internet Explorer and Microsoft Edge
+-o- for old pre-WebKit versions of Opera */
+html{
+	height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+	height: 100%;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+#title{
+	font-size: 62px;
+}
+
+ul{
+  padding: 0px;
+	list-style-image: url('bean.png');
+  list-style: none;
+}
+
+li:hover{
+	cursor: pointer;
+	background: chocolate;
+	color: beige;
+}
+
+strong{
+	color: chocolate;
+  font-weight: bold;
+  background: url('flowers.jpg');
+  background-size: cover;
+	background-clip: text;
+  /* Set background-clip to text with approporate prefix for Chrome */
+  -webkit-background-clip: text;
+	color: transparent;
+}
+
+.main-img {
+  width: 1000px;
+  height: 550px;
+  background: url('coffee.png'), url('plant-left.png'), url('plant-right.png');
+  background-blend-mode: multiply;
+  margin: 62px auto;
+  -webkit-box-reflect: below;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

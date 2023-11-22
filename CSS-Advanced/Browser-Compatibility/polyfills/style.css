@@ -1,0 +1,55 @@
+html{
+	height: 100%;
+  overflow-x: hidden;
+}
+
+body{
+	height: 100%;
+	margin: 0px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.header{
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+#title{
+	font-size: 62px;
+}
+
+ul{
+	list-style-image: url('bean.png');
+  list-style: none;
+}
+
+li:hover{
+	cursor: pointer;
+	background: chocolate;
+	color: beige;
+}
+
+strong{
+	color: chocolate;
+  font-weight: bold;
+  background: url('flowers.jpg');
+  background-size: cover;
+	background-clip: text;
+  -webkit-background-clip: text;
+	color: transparent;
+}
+
+.main-img {
+  width: 1000px;
+  height: 550px;
+  background: url('coffee.png'), url('plant-left.png'), url('plant-right.png');
+  background-blend-mode: multiply;
+  margin: 62px auto;
+  -webkit-box-reflect: below;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
